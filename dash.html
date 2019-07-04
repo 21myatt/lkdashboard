@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LK Dashborad</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- sidebar -->
+      <aside class="sidenav">
+        <div class="admin">
+          <p>LanKyone Admin</p>
+        </div>
+        <div class="list">
+          <ul>
+            <a href="#1" class="active"><li>User</li></a>
+            <a href="#2"><li>item1</li></a>
+            <a href="#3"><li>item1</li></a>
+            <a href="#4"><li>item1</li></a>
+            <a href="#5"><li>item1</li></a>
+          </ul>
+        </div>
+        <div class="logout">
+          <p>logout</p>
+        </div>
+      </aside>
+      <!-- sidebar -->
+
+      <!-- main -->
+      <main class="main">
+        <div class="heading">
+          <h2 id="heading">User Table</h2>
+          <p id="text">Total User Information </p>
+        </div>
+        <div class="table-container">
+          <table id="table">
+            <thead id="thead">
+              <tr id="thead-row">
+                <!-- TODO: to add checkbox -->
+                <th id="thead-row-data">Name</th>
+                <th id="thead-row-data">University</th>
+                <th id="thead-row-data">Phone</th>
+                <th id="thead-row-data">Status</th>
+                <th id="thead-row-data">frequent</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="notactive"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span-preminum">Preminum User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Not Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+              <tr id="tbody-row">
+                <!-- TODO: to add checkbox -->
+                <td id="tbody-row-data" data-column="Name">
+                  <div class="user-profile">
+                    <div class="user-profile-img"><div id="active"></div></div>
+                    <div class="user-profile-text">
+                      <p id="user-profile-text-p">Aung Myatt Htet</p>
+                      <span id="user-profile-text-span">Free User</span>
+                    </div>
+                  </div>
+                </td>
+                <td id="tbody-row-data" data-column="University">Yangon Technological University</td>
+                <td id="tbody-row-data" data-column="Phone">+959784896395</td>
+                <td id="tbody-row-data" data-column="Status">Active</td>
+                <td id="tbody-row-data" data-column="frequent">45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <!-- main -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <p> <a href="https://innovatorymm.com">Innovatory Ltd</a> &copy; 2019</p>
+      </footer>
+      <!-- footer -->
+
+      <!-- header -->
+      <header class="header">
+        <form action="">
+          <input type="search">
+          <i class="fa fa-search"></i>
+        </form>
+        <div class="avatar">
+          <div id="active"></div>
+        </div>
+      </header>
+      <!-- header -->
+
+    </div>
+  </body>
+</html>

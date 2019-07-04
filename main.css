@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+  box-shadow: 0px 12px 9px -20px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  grid-area: main;
+  background-color: #fafafa;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #fafafa;
+}
+
+.admin {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.list {
+  color: white;
+  margin-top: 22px;
+  text-align: center;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list ul a {
+  text-decoration: none;
+}
+
+.list ul li {
+  padding: 10px;
+  color: white;
+}
+
+.list ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+.list ul a.active li {
+  background-color: #2e2e2e;
+  color: white !important;
+}
+
+.logout {
+  color: white;
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  width: 150px;
+  height: 40px;
+}
+
+.logout:hover {
+  background-color: white;
+  color: black;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 100px;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+    background-color: #fafafa;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+.avatar {
+  background-image: url("https://avatarfiles.alphacoders.com/629/thumb-62922.jpg");
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: top center;
+  align-self: center;
+  border: 3px solid white;
+}
+
+#active {
+  width: 15px;
+  height: 15px;
+  background-color: #4cff42;
+  border-radius: 50%;
+  position: relative !important;
+  top: 25px;
+  left: 25px;
+  border: 3px solid white;
+}
+
+#notactive {
+  width: 15px;
+  height: 15px;
+  background-color: #ff5024;
+  border-radius: 50%;
+  position: relative !important;
+  top: 25px;
+  left: 25px;
+  border: 3px solid white;
+}
+
+#heading {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: inherit;
+  display: block;
+  font-weight: 600;
+}
+
+#text {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: inherit;
+  display: inline-block;
+}
+/*
+.heading {
+  background-color: green;
+}
+*/
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table {
+  margin: auto;
+  width: 70%;
+  border-radius: 20px;
+}
+
+tbody {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+th, td {
+  height: 40px;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+  background-color: inherit;
+}
+
+td {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.user-profile-img {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.user-profile-text {
+  text-align: left;
+}
+
+#user-profile-text-p {
+  color: black;
+  text-align: left;
+}
+
+#user-profile-text-span {
+  color: blue;
+  font-size: 12px;
+}
+
+#user-profile-text-span-preminum {
+  color: #ff6d24;
+  font-size: 12px;
+}
